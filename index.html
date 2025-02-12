@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintech App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fintech Web App</h1>
+        
+        <div class="balance">
+            <h2>Balance: <span id="balance">0</span> KES</h2>
+        </div>
+
+        <div class="transactions">
+            <div class="transaction">
+                <h3>Deposit</h3>
+                <input type="number" id="deposit-amount" placeholder="Enter amount">
+                <button onclick="deposit()">Deposit</button>
+            </div>
+
+            <div class="transaction">
+                <h3>Withdraw</h3>
+                <input type="number" id="withdraw-amount" placeholder="Enter amount">
+                <button onclick="withdraw()">Withdraw</button>
+            </div>
+
+            <div class="transaction">
+                <h3>Transfer</h3>
+                <input type="text" id="recipient" placeholder="Recipient Name">
+                <input type="number" id="transfer-amount" placeholder="Enter amount">
+                <button onclick="transfer()">Transfer</button>
+            </div>
+        </div>
+
+        <div class="history">
+            <h3>Transaction History</h3>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
